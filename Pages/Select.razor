@@ -1,0 +1,31 @@
+﻿@page "/select"
+
+@using CountryMusicCountdown.Data
+@inject ScraperService ScrapeNow
+
+<h1>DateNames</h1>
+
+<hr />
+@if (LstData == null)
+{
+                <p><em>Loading..</em></p>
+
+}
+else
+{
+@foreach (var data in LstData)
+{
+                <tr>
+                    <td>@data.ToString()</td>
+                </tr>
+}
+}
+
+@code {
+    public List<string> LstData;
+
+    protected override async Task OnInitializedAsync()
+    {
+        LstData = await ScrapeNow.ScrapeDates();
+    }
+}

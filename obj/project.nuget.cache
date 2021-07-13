@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "KQdQbg/jZ4Urwb0R/k8GK4pUsezju5Hxf3ta/y3Tkbxk5lRP9huTQpd0S4UUlZ5dE8ljXLM6NtcTcNPwXbGK5Q==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Lanecw\\workspace\\CountryMusicCountdown\\CountryMusicCountdown.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lanecw\\.nuget\\packages\\htmlagilitypack\\1.11.34\\htmlagilitypack.1.11.34.nupkg.sha512"
+  ],
+  "logs": []
+}
