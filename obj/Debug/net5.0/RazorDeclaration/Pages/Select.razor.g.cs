@@ -83,7 +83,14 @@ using CountryMusicCountdown.Shared;
 #line hidden
 #nullable disable
 #nullable restore
-#line 3 "C:\Users\Lanecw\workspace\CountryMusicCountdown\Pages\Select.razor"
+#line 11 "C:\Users\Lanecw\workspace\CountryMusicCountdown\_Imports.razor"
+using Syncfusion.Blazor.Calendars;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 4 "C:\Users\Lanecw\workspace\CountryMusicCountdown\Pages\Select.razor"
 using CountryMusicCountdown.Data;
 
 #line default
@@ -98,13 +105,24 @@ using CountryMusicCountdown.Data;
         }
         #pragma warning restore 1998
 #nullable restore
-#line 24 "C:\Users\Lanecw\workspace\CountryMusicCountdown\Pages\Select.razor"
+#line 18 "C:\Users\Lanecw\workspace\CountryMusicCountdown\Pages\Select.razor"
+      
+    public DateTime DateValue { get; set; } = new DateTime(1978, 08, 27);
+    public DateTime StartValue { get; set; } = new DateTime(1973, 10, 06);
+    
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
+#line 52 "C:\Users\Lanecw\workspace\CountryMusicCountdown\Pages\Select.razor"
        
     public List<string> LstData;
 
     protected override async Task OnInitializedAsync()
     {
         LstData = await ScrapeNow.ScrapeDates();
+
     }
 
 #line default
