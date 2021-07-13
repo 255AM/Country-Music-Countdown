@@ -10,6 +10,8 @@ namespace CountryMusicCountdown.Data
 {
     public class ScraperService
     {
+
+        public DateTime CountdownDate { get; set; }
         public async Task<List<string>> ScrapeDates()
         {
             List<string> Datalst = new List<string>();
@@ -31,5 +33,6 @@ namespace CountryMusicCountdown.Data
 
             return Datalst;
         }
+
     }
 }

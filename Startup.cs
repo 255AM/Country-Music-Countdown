@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CountryMusicCountdown.Data;
+using Syncfusion.Blazor;
 
 namespace CountryMusicCountdown
 {
@@ -29,6 +30,7 @@ namespace CountryMusicCountdown
             services.AddRazorPages();
             services.AddServerSideBlazor();
             services.AddSingleton<WeatherForecastService>();
+            services.AddSyncfusionBlazor();
 
             services.AddSingleton<ScraperService>();
         }
@@ -36,6 +38,7 @@ namespace CountryMusicCountdown
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            Syncfusion.Licensing.SyncfusionLicenseProvider.RegisterLicense("NDczNTgzQDMxMzkyZTMyMmUzMFZFNXR3TEcwZ2tCeU42V3daUGlvelZJQStKYlJHMXN5a1NxWTEzUUJCRkU9");
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
