@@ -108,15 +108,13 @@ using Syncfusion.Blazor.Calendars;
 #line hidden
 #nullable disable
             __builder.OpenElement(9, "option");
-            __builder.AddContent(10, 
 #nullable restore
 #line 7 "C:\Users\Lanecw\workspace\CountryMusicCountdown\Shared\Components\DatePicker.razor"
-                                                                     i
+__builder.AddContent(10, i);
 
 #line default
 #line hidden
 #nullable disable
-            );
             __builder.CloseElement();
 #nullable restore
 #line 8 "C:\Users\Lanecw\workspace\CountryMusicCountdown\Shared\Components\DatePicker.razor"
@@ -148,15 +146,13 @@ using Syncfusion.Blazor.Calendars;
 #line hidden
 #nullable disable
             );
-            __builder.AddContent(17, 
 #nullable restore
 #line 13 "C:\Users\Lanecw\workspace\CountryMusicCountdown\Shared\Components\DatePicker.razor"
-                                                                                Months[i-1]
+__builder.AddContent(17, Months[i-1]);
 
 #line default
 #line hidden
 #nullable disable
-            );
             __builder.CloseElement();
 #nullable restore
 #line 14 "C:\Users\Lanecw\workspace\CountryMusicCountdown\Shared\Components\DatePicker.razor"
@@ -179,15 +175,13 @@ using Syncfusion.Blazor.Calendars;
 #line hidden
 #nullable disable
             __builder.OpenElement(22, "option");
-            __builder.AddContent(23, 
 #nullable restore
 #line 19 "C:\Users\Lanecw\workspace\CountryMusicCountdown\Shared\Components\DatePicker.razor"
-                                                                                                      i
+__builder.AddContent(23, i);
 
 #line default
 #line hidden
 #nullable disable
-            );
             __builder.CloseElement();
 #nullable restore
 #line 20 "C:\Users\Lanecw\workspace\CountryMusicCountdown\Shared\Components\DatePicker.razor"

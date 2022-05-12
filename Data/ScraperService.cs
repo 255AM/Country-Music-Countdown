@@ -24,13 +24,9 @@ namespace CountryMusicCountdown.Data
 
         var DateNames = doc.DocumentNode.Descendants("li")
                 .Where(node => !node.GetAttributeValue("class", "").Contains("toclevel-1")).ToList();
-
-        foreach(var item in DateNames)
-            {
-                if (item.FirstChild.Attributes.Count > 0)
-                    Datalst.Add("https://american-country-countdown.fandom.com/" + item.FirstChild.Attributes[0].Value);
-            }
-
+            Datalst.AddRange(from item in DateNames
+                             where item.FirstChild.Attributes.Count > 0
+                             select "https://american-country-countdown.fandom.com/" + item.FirstChild.Attributes[0].Value);
             return Datalst;
         }
 

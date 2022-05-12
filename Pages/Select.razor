@@ -7,20 +7,21 @@
 <h1>DateNames</h1>
 
 <div id="wrapper">
-    <SfDatePicker TValue="DateTime?" 
+    <SfDatePicker TValue="DateTime?" @bind-Value="@DateValue"
                   Min="@StartValue"
-                  
                   Format="yyyy-MM-dd"
                   Start="@CalendarView.Decade"
                   Placeholder="Select A Countdown Date"></SfDatePicker>
+   
 </div>
 
 @code{
-    public DateTime DateValue { get; set; } = new DateTime(1978, 08, 27);
+    public DateTime? DateValue { get; set; } = DateTime.Now;
     public DateTime StartValue { get; set; } = new DateTime(1973, 10, 06);
     
-}
 
+}
+<p>@DateValue</p>
 <hr />
 
 
@@ -36,13 +37,14 @@
 }
 else
 {
+    
     @foreach (var data in LstData)
     {
-<tr>
-    <td>@data.Substring(data.LastIndexOf("/") + 1, data.Length - (data.LastIndexOf("/") + 1))</td>
-    
+        <tr>
+            <td>@data.Substring(data.LastIndexOf("/") + 1, data.Length - (data.LastIndexOf("/") + 1))</td>
 
-</tr>
+
+        </tr>
 
     }
 }

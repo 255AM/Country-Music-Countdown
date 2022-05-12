@@ -6,7 +6,6 @@ C:\Users\Lanecw\workspace\CountryMusicCountdown\bin\Debug\net5.0\CountryMusicCou
 C:\Users\Lanecw\workspace\CountryMusicCountdown\bin\Debug\net5.0\CountryMusicCountdown.runtimeconfig.json
 C:\Users\Lanecw\workspace\CountryMusicCountdown\bin\Debug\net5.0\CountryMusicCountdown.runtimeconfig.dev.json
 C:\Users\Lanecw\workspace\CountryMusicCountdown\bin\Debug\net5.0\CountryMusicCountdown.dll
-C:\Users\Lanecw\workspace\CountryMusicCountdown\bin\Debug\net5.0\ref\CountryMusicCountdown.dll
 C:\Users\Lanecw\workspace\CountryMusicCountdown\bin\Debug\net5.0\CountryMusicCountdown.pdb
 C:\Users\Lanecw\workspace\CountryMusicCountdown\bin\Debug\net5.0\CountryMusicCountdown.Views.dll
 C:\Users\Lanecw\workspace\CountryMusicCountdown\bin\Debug\net5.0\CountryMusicCountdown.Views.pdb
@@ -67,3 +66,4 @@ C:\Users\Lanecw\workspace\CountryMusicCountdown\bin\Debug\net5.0\Syncfusion.Blaz
 C:\Users\Lanecw\workspace\CountryMusicCountdown\bin\Debug\net5.0\Syncfusion.ExcelExport.Net.dll
 C:\Users\Lanecw\workspace\CountryMusicCountdown\bin\Debug\net5.0\Syncfusion.Licensing.dll
 C:\Users\Lanecw\workspace\CountryMusicCountdown\bin\Debug\net5.0\Syncfusion.PdfExport.Net.dll
+C:\Users\Lanecw\workspace\CountryMusicCountdown\obj\Debug\net5.0\refint\CountryMusicCountdown.dll

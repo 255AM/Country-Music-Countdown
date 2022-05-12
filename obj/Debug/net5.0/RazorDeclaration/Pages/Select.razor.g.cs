@@ -107,9 +107,10 @@ using CountryMusicCountdown.Data;
 #nullable restore
 #line 18 "C:\Users\Lanecw\workspace\CountryMusicCountdown\Pages\Select.razor"
       
-    public DateTime DateValue { get; set; } = new DateTime(1978, 08, 27);
+    public DateTime? DateValue { get; set; } = DateTime.Now;
     public DateTime StartValue { get; set; } = new DateTime(1973, 10, 06);
     
+
 
 #line default
 #line hidden
