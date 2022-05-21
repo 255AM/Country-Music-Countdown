@@ -14,7 +14,7 @@ namespace CountryMusicCountdown.Data
         public DateTime CountdownDate { get; set; }
         public async Task<List<string>> ScrapeDates()
         {
-            List<string> Datalst = new List<string>();
+            List<string> DateList = new List<string>();
 
         HttpClient hc = new HttpClient();
         HttpResponseMessage result = await hc.GetAsync($"https://american-country-countdown.fandom.com/wiki/Charts");
@@ -24,10 +24,10 @@ namespace CountryMusicCountdown.Data
 
         var DateNames = doc.DocumentNode.Descendants("li")
                 .Where(node => !node.GetAttributeValue("class", "").Contains("toclevel-1")).ToList();
-            Datalst.AddRange(from item in DateNames
+            DateList.AddRange(from item in DateNames
                              where item.FirstChild.Attributes.Count > 0
                              select "https://american-country-countdown.fandom.com/" + item.FirstChild.Attributes[0].Value);
-            return Datalst;
+            return DateList;
         }
 
     }
